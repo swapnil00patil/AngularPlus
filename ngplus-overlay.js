@@ -81,7 +81,8 @@
 
             function init() {
                 wireUpHttpInterceptor();
-                if (window.jQuery) wirejQueryInterceptor();
+                // do not want to check ajax calls made by jquery
+                // if (window.jQuery) wirejQueryInterceptor();
                 overlayContainer = document.getElementById('ngplus-overlay-container');
             }
 
